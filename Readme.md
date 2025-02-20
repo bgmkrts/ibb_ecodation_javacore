@@ -6903,12 +6903,12 @@ public class Main {
     public static void main(String[] args) {
         // Araba sınıfından bir nesne oluşturma
         Araba araba1 = new Araba();
-
+        
         // Nesne özelliklerine değer atama
         araba1.marka = "Toyota";
         araba1.model = "Corolla";
         araba1.yil = 2022;
-
+        
         // Metodu çağırma
         araba1.bilgileriGoster();
     }
@@ -7023,7 +7023,7 @@ class Araba {
 public class Main {
     public static void main(String[] args) {
         Araba araba1 = new Araba("Mercedes", "E-Class", 2022);
-
+        
         // Getter kullanarak değerleri al
         System.out.println("Marka: " + araba1.getMarka());
         System.out.println("Model: " + araba1.getModel());
@@ -7055,7 +7055,7 @@ Bu işleme **kalıtım (inheritance)** denir ve `extends` anahtar kelimesi kulla
 // Üst Sınıf (Parent Class)
 class Arac {
     String yakitTuru = "Benzin";
-
+    
     void hareketEt() {
         System.out.println("Araç hareket ediyor...");
     }
