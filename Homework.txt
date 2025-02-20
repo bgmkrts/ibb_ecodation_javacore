@@ -232,3 +232,7 @@ Java 8 bilmek önemli çünkü:
  ✅ Küçük ve basit işlemler için forEach
  ✅ Döngüyü kırmak veya atlamak gerekiyorsa for veya for-of
  ✅ Asenkron işlemler için for-of
+
+
+ 7.Ders Ödevi (20 Şubat)
+ constructor ile static {} arasındaki farklar ?
