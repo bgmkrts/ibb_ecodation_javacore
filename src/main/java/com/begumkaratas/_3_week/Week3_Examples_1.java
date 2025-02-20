@@ -57,7 +57,6 @@ public class Week3_Examples_1 {
     // Scanner
     private static final Scanner scanner = new Scanner(System.in);
 
-    /// //////////////////////////////////////////////////////////////////////////////////
     // Loglamaa
     private static final Logger logger = Logger.getLogger(Week3_Examples_1.class.getName());
 
