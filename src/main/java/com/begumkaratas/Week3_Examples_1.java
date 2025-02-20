@@ -58,7 +58,7 @@ public class Week3_Examples_1 {
     private static final Scanner scanner = new Scanner(System.in);
 
     /// //////////////////////////////////////////////////////////////////////////////////
-    // Loglama
+    // Loglamaa
     private static final Logger logger = Logger.getLogger(Week3_Examples_1.class.getName());
 
     // Loglama dosyası için
