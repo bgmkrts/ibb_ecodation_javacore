@@ -980,6 +980,6 @@ public class Main {
 
 ---
 
-# **Sonuç**
+# **Sonuç*
 Tasarım desenleri, **yazılım geliştirme süreçlerinde tekrar eden problemleri çözmek için kullanılan, optimize edilmiş ve test edilmiş çözümler** sunar.  
 Bu desenleri kullanarak **daha esnek, ölçeklenebilir ve sürdürülebilir** yazılımlar geliştirebilirsiniz. 🚀
