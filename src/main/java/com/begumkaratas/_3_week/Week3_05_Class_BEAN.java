@@ -6,7 +6,6 @@ import java.util.Objects;
 
 
 /*1. Kullanıcının Soyisminin ilk üç harfini büyük yazınız ve soyisimi eğer 3 harften fazlaysa geri kalan harflerinin yerine yıldız (*)
- Hamit MIZRAK , Hamit MIZ***(Maskeleme)
  Tip(loop, conditional)*/
 //2. İsim ve soyisim birlikte ayarlanırken, isim baş harfi büyük geri kalan küçük olacak şekilde ayarlanabilir mi?
 //3. İsim ve soyisim birlikte dönen bir metod oluşturulabilir mi?
@@ -116,18 +115,18 @@ public class Week3_05_Class_BEAN {
     public static void main(String[] args) {
         Week3_05_Class_BEAN bean1= new Week3_05_Class_BEAN();
         bean1.setId(1L);
-        bean1.setName("Hamit");
-        bean1.setSurname("Mızrak");
+        bean1.setName("Begüm");
+        bean1.setSurname("Karatas");
         System.out.println(SpecialColor.BLUE+ bean1.getId()+" "+bean1.getName()+" "+bean1.getSurname()+" "+bean1.getCreatedDate()+SpecialColor.RESET);
         System.out.println(SpecialColor.YELLOW+" "+bean1+" "+SpecialColor.RESET);
 
         System.out.println("#################################################################");
-        Week3_05_Class_BEAN bean2= new Week3_05_Class_BEAN("Hamit2","Mızrak");
+        Week3_05_Class_BEAN bean2= new Week3_05_Class_BEAN("Begum2","Karatas");
         System.out.println(SpecialColor.YELLOW+" "+bean2+" "+SpecialColor.RESET);
 
         System.out.println("##################################################################");
         /*1. Kullanıcının Soyisminin ilk üç harfini büyük yazınız ve soyisimi eğer 3 harften fazlaysa geri kalan harflerinin yerine yıldız (*)
-        Hamit MIZRAK , Hamit MIZ***(Maskeleme)
+        Begüm KARATAS , Begum Kar***(Maskeleme)
                 Tip(loop, conditional)*/
     }
 }
