@@ -236,3 +236,20 @@ Java 8 bilmek önemli çünkü:
 
  7.Ders Ödevi (20 Şubat)
  constructor ile static {} arasındaki farklar ?
+
+Constructor, nesne oluşturulunca çalışır.
+static {}, sınıf yüklenince bir kez çalışır ve static değişkenleri başlatır.
+
+  if(name!=null && !name.isEmpty()) bu kod ne iş yapar ?
+
+  null olup olmadığını ve boş string olup olmadığını kontrol eder.
+  İkisi birlikte kullanıldığında, name değişkeni ne null ne de boşsa işlem yapılır.
+
+8.Ders Ödevi (22 Şubat)
+
+
+
+
+
+
+
