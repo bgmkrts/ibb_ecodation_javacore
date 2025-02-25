@@ -1,5 +1,6 @@
 package com.begumkaratas.project_step1_file;
 
+import com.begumkaratas.utils.SpecialColor;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
