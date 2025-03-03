@@ -1,7 +1,7 @@
-package com.hamitmizrak;
+package com.begumkaratas;
 
-import com.hamitmizrak.controller.StudentController;
-import com.hamitmizrak.dto.PersonDto;
+import com.begumkaratas.controller.StudentController;
+import com.begumkaratas.dto.PersonDto;
 
 //
 public class Main {
