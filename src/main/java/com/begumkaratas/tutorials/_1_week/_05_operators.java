@@ -21,7 +21,7 @@ public class _05_operators {
         System.out.println("Bölme: " + division);
         System.out.println("Kalan: " + modulus);
 
-        // Mantıksal Operators: &&=VE ||=VEYA !=değil
+        // Mantıksal Operators: &&=VE ||=VEYA !=değill
         // ++ 1 artır,  -- 1 azalt
     }
 }

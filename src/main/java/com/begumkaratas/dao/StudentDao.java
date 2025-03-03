@@ -19,7 +19,7 @@ public class StudentDao implements IDaoGenerics<StudentDto> {
     // Field
     private ArrayList<StudentDto> studentDtoList = new ArrayList<>();
     // ID artık tüm sınıflar tarafından erişilebilir olacak
-    int maxId=0;
+    int  maxId=0;
     private static final String FILE_NAME = "students.txt";
 
     // **📌 Scanner Nesnesini En Üste Tanımladık**

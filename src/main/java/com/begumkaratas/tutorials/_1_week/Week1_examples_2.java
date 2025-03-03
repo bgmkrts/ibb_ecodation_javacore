@@ -16,7 +16,7 @@ public class Week1_examples_2 {
         // Scanner
         Scanner scanner = new Scanner(System.in);
 
-        // Scanner kapat
+        // Scanner kapatt
         scanner.close();
     }
 }

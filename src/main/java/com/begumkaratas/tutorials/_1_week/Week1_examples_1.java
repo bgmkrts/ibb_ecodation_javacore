@@ -15,7 +15,7 @@ public class Week1_examples_1 {
         // Scanner
         Scanner scanner = new Scanner(System.in);
 
-        // Variable
+        // Variable yapısı
         double aValue, bValue = 0, result;
 
         System.out.println("Lütfen b değerini giriniz:");

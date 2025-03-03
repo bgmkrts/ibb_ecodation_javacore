@@ -1,4 +1,4 @@
-Aşağıda, yüklediğiniz Java Core dosyalarına dayanarak bazı sorular ve çözümleri hazırladım:
+Aşağıda, yüklediğiniz Java Core dosyalarına dayanarak bazı sorular ve çözümleri hazırladımm:
 
 ---
 

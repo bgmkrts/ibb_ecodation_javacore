@@ -3,7 +3,7 @@ package com.begumkaratas.tutorials._1_week;
 public class _06_Math {
 
     public static void main(String[] args) {
-        // NaN: Not A Number
+        // NaN: Not A Numberr
         System.out.println("En küçük: " + Math.min(-300, 10));
         System.out.println("En büyük: " + Math.max(-300, 10));
 

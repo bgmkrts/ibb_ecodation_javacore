@@ -5,7 +5,7 @@ package com.begumkaratas.tutorials._1_week;
 Multiple
  */
 public class _01_JavaPsvm {
-    // psvm => tab
+    // psvm => tab tuşu
     public static void main(String[] args) {
         // Çıktı
         //sout => tab

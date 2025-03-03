@@ -9,7 +9,7 @@ public interface IDaoGenerics<T> {
 
     // CRUD
     // CREATE
-    T create(T t);
+    T  create(T t);
 
     // FIND BY NAME,ID
     T findByName(String name);

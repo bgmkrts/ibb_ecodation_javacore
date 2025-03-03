@@ -3,7 +3,7 @@ package com.begumkaratas.tutorials._1_week;
 public class _04_4_Autoboxing_Boxing {
 
     public static void main(String[] args) {
-        // Autoboxing: Primitive => Wrapper Type dönüştürmek
+        // Autoboxing: Primitive => Wrapper Type dönüştürmekk
         int primitiveValue = 100;
         Integer wrapperValue = primitiveValue; // Autoboxing
         //wrapperValue=null;

@@ -7,7 +7,7 @@ public class _08_1_Scanner {
 
     public static void main(String[] args) {
 
-        // Field
+        // Fieldd
         String name,surname;
         int language;
 

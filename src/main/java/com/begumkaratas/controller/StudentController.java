@@ -12,7 +12,7 @@ public class StudentController implements IDaoGenerics<StudentDto> {
     // INJECTION
     private final StudentDao studentDao;
 
-    // Parametresiz Constructor
+    // Parametresizz Constructor
     public StudentController() {
         this.studentDao = new StudentDao();
     }

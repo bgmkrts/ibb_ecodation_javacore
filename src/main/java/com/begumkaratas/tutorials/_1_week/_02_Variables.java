@@ -8,7 +8,7 @@ public class _02_Variables {
         // 1-) isim, veya sıfat, zamir kullanmamız lazım.
         // Anlamlı ve açıklayıcı isimler seçiniz
         // int studentCounter=11;
-        // float totalSalary=14.5355f;
+        // float totalSalary=14.5356f;
         int schoolNumber = 23;
         System.out.println(schoolNumber);
 

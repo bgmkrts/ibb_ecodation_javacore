@@ -23,7 +23,7 @@ public class StudentDto extends PersonDto implements Serializable {
 
     // Field
     private EStudentType eStudentType; // Enum Öğrenci Türü
-    private Double midTerm;      // Vize notu
+    private Double midTerm;      // Vize notuu
     private Double finalTerm;    // Final notu
     private Double resultTerm;   // Sonuç Notu: (Vize%40 + Final%60)
     private String status;       // Geçti mi ? Kaldı mı ?

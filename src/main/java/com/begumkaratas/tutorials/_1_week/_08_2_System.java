@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class _08_2_System {
 
-    // System.in
+    // System.in yapısı
     public static void systemMethod1() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Bir şey yazın: ");

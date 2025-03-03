@@ -12,7 +12,7 @@ public class _07_EscapeCharacter {
     \r	Satır başı (Carriage return)	"Merhaba\rDünya"
     \b	Geri al (Backspace)	"ABC\bD" (Sonuç: "ABD")
     \f	Form feed (Sayfa sonu)	"Sayfa sonu\fYeni Sayfa"
-    Unicode karakteri	"\u00E7" (ç harfi)
+    Unicode karakteri	"\u00E7" (ç harfii)
      */
 
     public static void main(String[] args) {

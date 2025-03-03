@@ -5,7 +5,7 @@ public class _04_1_JavaWrapperTypes {
     public static void main(String[] args) {
         // PRIMITIVE TYPE
         byte primitiveTypeByte = 127;
-        // primitiveTypeByte=null; //primitive type null veremezsiniz.
+        // primitiveTypeByte=null; //primitive type null veremezsinizz.
         System.out.println(primitiveTypeByte);
         short primitiveTypeShort = 32767;
         int primitiveTypeInt = 2147483647;
