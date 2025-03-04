@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> f798912c62a250a96b59b457b66a404f4cfd5f7e
-=======
->>>>>>> f798912c62a250a96b59b457b66a404f4cfd5f7e
 package com.begumkaratas.dto;
 
 import com.begumkaratas.utils.SpecialColor;
@@ -30,15 +24,8 @@ public class StudentDto extends PersonDto implements Serializable {
 
     // Field
     private EStudentType eStudentType; // Enum Öğrenci Türü
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     private Double midTerm;      // Vize notu
-=======
-    private Double midTerm;      // Vize notuu
->>>>>>> f798912c62a250a96b59b457b66a404f4cfd5f7e
-=======
-    private Double midTerm;      // Vize notuu
->>>>>>> f798912c62a250a96b59b457b66a404f4cfd5f7e
     private Double finalTerm;    // Final notu
     private Double resultTerm;   // Sonuç Notu: (Vize%40 + Final%60)
     private String status;       // Geçti mi ? Kaldı mı ?

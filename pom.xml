@@ -36,8 +36,7 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
         <!--for maven-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -47,10 +46,7 @@
         <maven.compiler.release>21</maven.compiler.release>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
-=======
->>>>>>> f798912c62a250a96b59b457b66a404f4cfd5f7e
-=======
->>>>>>> f798912c62a250a96b59b457b66a404f4cfd5f7e
+
     </properties>
     <!-- start dependencies-->
     <dependencies>
@@ -74,15 +70,11 @@
     </dependencies>
 
     <build>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <!--apache tomcat manuel deployment içinn-->
-=======
+
+
+
         <!--apache tomcat manuel deployment için-->
->>>>>>> f798912c62a250a96b59b457b66a404f4cfd5f7e
-=======
-        <!--apache tomcat manuel deployment için-->
->>>>>>> f798912c62a250a96b59b457b66a404f4cfd5f7e
+
         <defaultGoal>spring-boot:run</defaultGoal>
         <finalName>${project.artifactId}</finalName>
         <plugins>
