@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> f798912c62a250a96b59b457b66a404f4cfd5f7e
 =======
 >>>>>>> f798912c62a250a96b59b457b66a404f4cfd5f7e
 package com.begumkaratas.dto;
@@ -28,7 +31,11 @@ public class StudentDto extends PersonDto implements Serializable {
     // Field
     private EStudentType eStudentType; // Enum Öğrenci Türü
 <<<<<<< HEAD
+<<<<<<< HEAD
     private Double midTerm;      // Vize notu
+=======
+    private Double midTerm;      // Vize notuu
+>>>>>>> f798912c62a250a96b59b457b66a404f4cfd5f7e
 =======
     private Double midTerm;      // Vize notuu
 >>>>>>> f798912c62a250a96b59b457b66a404f4cfd5f7e
