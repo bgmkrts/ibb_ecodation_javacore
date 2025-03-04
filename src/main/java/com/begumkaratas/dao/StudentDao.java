@@ -19,7 +19,7 @@ public class StudentDao implements IDaoGenerics<StudentDto> {
     // Field
     private ArrayList<StudentDto> studentDtoList = new ArrayList<>();
     // ID artık tüm sınıflar tarafından erişilebilir olacak
-    int  maxId=0;
+    int maxId=0;
     private static final String FILE_NAME = "students.txt";
 
     // **📌 Scanner Nesnesini En Üste Tanımladık**
@@ -157,7 +157,7 @@ public class StudentDao implements IDaoGenerics<StudentDto> {
             validateStudent(studentDto);
 
             // Öğrenci Listesindeki En büyük ID Al
-             maxId = studentDtoList
+            maxId = studentDtoList
                     .stream()
                     .mapToInt(StudentDto::getId)
                     .max()
@@ -276,21 +276,24 @@ public class StudentDao implements IDaoGenerics<StudentDto> {
     // Öğrenci Güncelle
     @Override
     public StudentDto update(int id, StudentDto studentDto) {
-        for (StudentDto temp : studentDtoList) {
-            if (temp.getId() == id) {
-                temp.setName(studentDto.getName());
-                temp.setSurname(studentDto.getSurname());
-                temp.setBirthDate(studentDto.getBirthDate());
-                temp.setMidTerm(studentDto.getMidTerm());
-                temp.setFinalTerm(studentDto.getFinalTerm());
-                temp.setResultTerm(temp.getMidTerm() * 0.4 + temp.getFinalTerm() * 0.6);
-                temp.seteStudentType(studentDto.geteStudentType());
-                // Güncellenmiş Öğrenci Bilgileri
-                System.out.println(SpecialColor.BLUE + temp + " Öğrenci Bilgileri Güncellendi" + SpecialColor.RESET);
-                // Dosyaya kaydet
-                saveToFile();
-                return temp;
-            }
+        try{
+            for (StudentDto temp : studentDtoList) {
+                if (temp.getId() == id) {
+                    temp.setName(studentDto.getName());
+                    temp.setSurname(studentDto.getSurname());
+                    temp.setBirthDate(studentDto.getBirthDate());
+                    temp.setMidTerm(studentDto.getMidTerm());
+                    temp.setFinalTerm(studentDto.getFinalTerm());
+                    temp.setResultTerm(temp.getMidTerm() * 0.4 + temp.getFinalTerm() * 0.6);
+                    temp.seteStudentType(studentDto.geteStudentType());
+                    // Güncellenmiş Öğrenci Bilgileri
+                    System.out.println(SpecialColor.BLUE + temp + " Öğrenci Bilgileri Güncellendi" + SpecialColor.RESET);
+                    // Dosyaya kaydet
+                    saveToFile();
+                    return temp;
+                }
+            }} catch (Exception e){
+            e.printStackTrace();
         }
         throw new StudentNotFoundException("Öğrenci bulunamadı.");
     }
@@ -382,7 +385,6 @@ public class StudentDao implements IDaoGenerics<StudentDto> {
             }
         }
     }
-
 
     /// ///////////////////////////////////////////////////////////////////////
     /// Student Add
