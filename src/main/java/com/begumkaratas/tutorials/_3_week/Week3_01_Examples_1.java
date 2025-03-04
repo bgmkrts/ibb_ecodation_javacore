@@ -100,7 +100,7 @@ public class Week3_01_Examples_1 {
                     break;
                 case 4:
                     System.out.println("Program sonlandırılıyor...");
-                    logger.info("Program sonlandırıldı.");
+                    logger.info("Program sonlandırıldıı.");
                     return;
                     // break;
                     // System.exit(0);
