@@ -3,13 +3,14 @@ package com.begumkaratas.dto;
 import java.time.LocalDate;
 import java.util.Date;
 
- abstract public class PersonDto {
+//Dikkat: Record'ta abstract, inheritance kullanamazsınız.
+abstract public class PersonDto {
 
     protected Integer id;
     protected String name;
     protected String surname;
     //protected String emailAddress;
-    //protected  String password;
+    //protected String password;
     protected LocalDate birthDate; // Doğum günü
     protected Date createdDate;    // Sistem otomatik tarihi
 
@@ -44,7 +45,7 @@ import java.util.Date;
     }
 
     // Method
-     abstract public void displayInfo();
+    abstract public void displayInfo();
 
     // Getter
     public Integer getId() {
