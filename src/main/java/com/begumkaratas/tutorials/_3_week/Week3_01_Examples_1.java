@@ -53,7 +53,7 @@ Recursive| O(n)               | O(n)              | Daha okunaklı,      | Yava�
 // Access Modifier
 public class Week3_01_Examples_1 {
 
-    private static final int MAX_DECIMAL_ATTEMPTS = 3; // Virgüllü sayı girme hakkı
+    private static final int MAX_DECIMAL_ATTEMPTS = 7; // Virgüllü sayı girme hakkı
     private static final int MAX_RECURSIVE_LIMIT = 20; // Faktöriyel hesaplanması sınırsız sayı olmadığı için sınırlama
     // Scanner
     private static final Scanner scanner = new Scanner(System.in);
