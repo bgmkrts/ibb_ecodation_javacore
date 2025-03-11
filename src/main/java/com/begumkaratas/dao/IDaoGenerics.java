@@ -1,28 +1,43 @@
 package com.begumkaratas.dao;
 
-import com.begumkaratas.dto.StudentDto;
-
 import java.sql.Connection;
 import java.util.List;
+import java.util.Optional;
+
+/*
+Boş olabilir (Optional.empty())
+Bir değer içerebilir (Optional.of(T value))
+*/
+
+/*
+Java 8, bazı hazır fonksiyonel arayüzler de sunar:
+
+Predicate → boolean test(T t)  → Koşul kontrolleri için.
+Function<T, R> → R apply(T t)  → Bir değeri dönüştürmek için.
+Consumer → void accept(T t)    → Parametre alır, bir işlem yapar ama geriye değer döndürmez.
+Supplier → T get()             → Parametre almaz, bir değer üretir.
+ */
 
 public interface IDaoGenerics<T> {
 
     // CRUD
     // CREATE
-    T  create(T t);
+    T create(T t);
 
-    // FIND BY NAME,ID
-    T findByName(String name);
-    T  findById(int id);
-
-    // LIST
+    // LIST List için Optional kullanmana gerek yoktur.
     List<T> list();
 
+    // FIND BY NAME
+    Optional<T> findByName(String name);
+
+    // FIND BY ID
+    Optional<T> findById(int id);
+
     // UPDATE
-    T update(int id, T t);
+    Optional<T> update(int id, T t);
 
     // DELETE
-    T delete(int id);
+    Optional<T> delete(int id);
 
     // CHOOISE
     void chooise();

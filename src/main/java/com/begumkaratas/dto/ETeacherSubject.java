@@ -1,6 +1,5 @@
 package com.begumkaratas.dto;
 
-
 // Enum ()
 // Öğretmen Branşı
 public enum ETeacherSubject {
