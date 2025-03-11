@@ -1,7 +1,7 @@
-package com.begumkaratas.tutorials._3_AccessModifier;
+package com.begumkaratas.tutorials.oop._3_AccessModifier;
 
-import com.begumkaratas.tutorials._3_week.Week3_02_Access_1_PublicAccessModifier;
-import com.begumkaratas.utils.SpecialColor;
+import com.hamitmizrak.tutorials._3_week.Week3_02_Access_1_PublicAccessModifier;
+import com.hamitmizrak.utils.SpecialColor;
 
 public class _4_AllAccessModifier {
 

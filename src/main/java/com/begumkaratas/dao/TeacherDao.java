@@ -1,8 +1,7 @@
 package com.begumkaratas.dao;
 
 import com.begumkaratas.dto.EStudentType;
-import com.begumkaratas.dto.PersonDto;
-import com.begumkaratas.dto.StudentDto;
+import com.begumkaratas.dto.ETeacherSubject;
 import com.begumkaratas.dto.TeacherDto;
 import com.begumkaratas.exceptions.TeacherNotFoundException;
 import com.begumkaratas.utils.SpecialColor;
