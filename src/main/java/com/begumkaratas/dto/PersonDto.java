@@ -9,8 +9,6 @@ abstract public class PersonDto {
     protected Integer id;
     protected String name;
     protected String surname;
-    //protected String emailAddress;
-    //protected String password;
     protected LocalDate birthDate; // Doğum günü
     protected Date createdDate;    // Sistem otomatik tarihi
 
