@@ -1,4 +1,4 @@
-package com.hamitmizrak.iofiles;
+package com.begumkaratas.tutorials.iofiles;
 
 public interface IFileHandlerInterface {
     // Method

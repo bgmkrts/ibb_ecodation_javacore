@@ -1,6 +1,6 @@
-package com.hamitmizrak.iofiles;
+package com.begumkaratas.tutorials.iofiles;
 
-import com.hamitmizrak.utils.SpecialColor;
+import com.begumkaratas.utils.SpecialColor;
 
 import java.io.*;
 
