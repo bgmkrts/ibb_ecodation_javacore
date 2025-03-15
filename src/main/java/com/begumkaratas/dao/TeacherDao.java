@@ -1,10 +1,10 @@
-package com.hamitmizrak.dao;
+package com.begumkaratas.dao;
 
-import com.hamitmizrak.dto.ETeacherSubject;
-import com.hamitmizrak.dto.TeacherDto;
-import com.hamitmizrak.exceptions.TeacherNotFoundException;
-import com.hamitmizrak.iofiles.FileHandler;
-import com.hamitmizrak.utils.SpecialColor;
+import com.begumkaratas.dto.ETeacherSubject;
+import com.begumkaratas.dto.TeacherDto;
+import com.begumkaratas.exceptions.TeacherNotFoundException;
+import com.begumkaratas.iofiles.FileHandler;
+import com.begumkaratas.utils.SpecialColor;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
