@@ -1,11 +1,11 @@
-package com.hamitmizrak.dao;
+package com.begumkaratas.dao;
 
-import com.hamitmizrak.dto.StudentDto;
-import com.hamitmizrak.exceptions.StudentNotFoundException;
-import com.hamitmizrak.iofiles.FileHandler;
-import com.hamitmizrak.dto.ERole;
-import com.hamitmizrak.dto.EStudentType;
-import com.hamitmizrak.utils.SpecialColor;
+import com.begumkaratas.dto.StudentDto;
+import com.begumkaratas.exceptions.StudentNotFoundException;
+import com.begumkaratas.tutorials.iofiles.FileHandler;
+import com.begumkaratas.dto.tutorials.ERole;
+import com.begumkaratas.dto.EStudentType;
+import com.begumkaratas.utils.SpecialColor;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -68,7 +68,7 @@ public class StudentDao implements IDaoGenerics<StudentDto> {
                         student.getResultTerm() + "," +  // Öğrenci sonuç notunu ekler
                         student.getStatus() + "," +      // Öğrenci geçti/kaldı notunu ekler
                         student.getBirthDate() ;   // Öğrenci doğum tarihini ekler
-                        //student.geteStudentType();       // Öğrencinin eğitim türünü (Lisans, Yüksek Lisans vb.) ekler
+        //student.geteStudentType();       // Öğrencinin eğitim türünü (Lisans, Yüksek Lisans vb.) ekler
     }
 
     // 📌 CSV formatındaki satırı StudentDto nesnesine çevirme
@@ -118,7 +118,7 @@ public class StudentDao implements IDaoGenerics<StudentDto> {
             validateStudent(studentDto);
 
             // Öğrenci Listesindeki En büyük ID Al
-             maxId = studentDtoList
+            maxId = studentDtoList
                     .stream()
                     .mapToInt(StudentDto::getId)
                     .max()
@@ -252,23 +252,23 @@ public class StudentDao implements IDaoGenerics<StudentDto> {
     @Override
     public Optional<StudentDto> update(int id, StudentDto studentDto) {
         try{
-        for (StudentDto temp : studentDtoList) {
-            //if (temp.getId() == id) {
-            if (temp.getId() .equals(id)) {
-                temp.setName(studentDto.getName());
-                temp.setSurname(studentDto.getSurname());
-                temp.setBirthDate(studentDto.getBirthDate());
-                temp.setMidTerm(studentDto.getMidTerm());
-                temp.setFinalTerm(studentDto.getFinalTerm());
-                //temp.setResultTerm(temp.getMidTerm() * 0.4 + temp.getFinalTerm() * 0.6);
-                //temp.seteStudentType(studentDto.geteStudentType());
-                // Güncellenmiş Öğrenci Bilgileri
-                System.out.println(SpecialColor.BLUE + temp + " Öğrenci Bilgileri Güncellendi" + SpecialColor.RESET);
-                // Dosyaya kaydet
-                this.fileHandler.writeFile(studentToCsv(studentDto));
-                return Optional.of(temp); // Bir veri olabilir 😊
-            }
-        }} catch (Exception e){
+            for (StudentDto temp : studentDtoList) {
+                //if (temp.getId() == id) {
+                if (temp.getId() .equals(id)) {
+                    temp.setName(studentDto.getName());
+                    temp.setSurname(studentDto.getSurname());
+                    temp.setBirthDate(studentDto.getBirthDate());
+                    temp.setMidTerm(studentDto.getMidTerm());
+                    temp.setFinalTerm(studentDto.getFinalTerm());
+                    //temp.setResultTerm(temp.getMidTerm() * 0.4 + temp.getFinalTerm() * 0.6);
+                    //temp.seteStudentType(studentDto.geteStudentType());
+                    // Güncellenmiş Öğrenci Bilgileri
+                    System.out.println(SpecialColor.BLUE + temp + " Öğrenci Bilgileri Güncellendi" + SpecialColor.RESET);
+                    // Dosyaya kaydet
+                    this.fileHandler.writeFile(studentToCsv(studentDto));
+                    return Optional.of(temp); // Bir veri olabilir 😊
+                }
+            }} catch (Exception e){
             e.printStackTrace();
             throw new StudentNotFoundException("Öğrenci bulunamadı.");
         }
