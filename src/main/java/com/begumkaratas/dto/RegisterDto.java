@@ -51,7 +51,7 @@ public class RegisterDto {
     }
 
     /// /////////////////////////////////////////////////
-    // Anahtar oluşturmaa
+    // Anahtar oluşturma
     private static SecretKey generateKey() {
         try {
             byte[] keyBytes = SECRET_KEY.getBytes(StandardCharsets.UTF_8);
