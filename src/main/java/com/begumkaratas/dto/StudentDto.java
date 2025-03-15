@@ -2,7 +2,6 @@
 package com.begumkaratas.dto;
 
 import com.begumkaratas.utils.SpecialColor;
-
 import java.io.Serializable;
 import java.time.LocalDate;
 
