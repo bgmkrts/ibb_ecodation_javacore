@@ -1,4 +1,4 @@
-package com.hamitmizrak.tutorials._6_week;
+package com.begumkaratas.tutorials._6_week;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;

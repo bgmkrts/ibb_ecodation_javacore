@@ -1,4 +1,4 @@
-package com.hamitmizrak.tutorials._6_week;
+package com.begumkaratas.tutorials._6_week;
 
 public class Week6_02_MyRunnable  implements Runnable  {
     @Override
