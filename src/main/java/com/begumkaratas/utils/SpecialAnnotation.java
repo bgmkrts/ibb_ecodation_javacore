@@ -1,4 +1,6 @@
 package com.begumkaratas.utils;
 
-public class SpecialAnnotation {
-}
+
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
