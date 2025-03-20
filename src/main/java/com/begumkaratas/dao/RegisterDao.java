@@ -1,11 +1,7 @@
 package com.begumkaratas.dao;
 
-import com.begumkaratas.dto.ERole;
-import com.begumkaratas.dto.EStudentType;
 import com.begumkaratas.dto.RegisterDto;
-import com.begumkaratas.dto.StudentDto;
 import com.begumkaratas.exceptions.RegisterNotFoundException;
-import com.begumkaratas.tutorials.iofiles.FileHandler;
 import com.begumkaratas.utils.SpecialColor;
 
 import java.io.BufferedWriter;
@@ -15,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 public class RegisterDao implements IDaoGenerics<RegisterDto> {
 

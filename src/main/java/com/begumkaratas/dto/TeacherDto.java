@@ -2,9 +2,10 @@ package com.begumkaratas.dto;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.logging.Logger;
 
 /**
- *  * @param personDto
+ * @param personDto
  * @param subject
  * @param yearsOfExperience
  * @param isTenured
@@ -32,24 +33,45 @@ public record TeacherDto(
         double salary
 ) implements Serializable {
 
-    // Cconstructor
-    public TeacherDto {
-        if (id == null || id < 0) throw new IllegalArgumentException("ID negatif olamaz");
-        if (name == null || name.isBlank()) throw new IllegalArgumentException("İsim boş olamaz");
-        if (surname == null || surname.isBlank()) throw new IllegalArgumentException("Soyisim boş olamaz");
-        if (birthDate == null) throw new IllegalArgumentException("Doğum tarihi boş olamaz");
-        if (subject == null ) throw new IllegalArgumentException("Uzmanlık alanı boş olamaz");
-        if (yearsOfExperience < 0) throw new IllegalArgumentException("Deneyim yılı negatif olamaz");
-        if (salary < 0) throw new IllegalArgumentException("Maaş negatif olamaz");
-    }
+    // Logger
+    private static final Logger logger = Logger.getLogger(TeacherDto.class.getName());
 
+    public TeacherDto {
+        if (id == null || id < 0) {
+            throw new IllegalArgumentException("❌ ID negatif olamaz!");
+        }
+        if (name == null || name.isBlank()) {
+            throw new IllegalArgumentException("❌ İsim boş olamaz!");
+        }
+        if (surname == null || surname.isBlank()) {
+            throw new IllegalArgumentException("❌ Soyisim boş olamaz!");
+        }
+        if (birthDate == null) {
+            throw new IllegalArgumentException("❌ Doğum tarihi boş olamaz!");
+        }
+        if (subject == null) {
+            throw new IllegalArgumentException("❌ Uzmanlık alanı boş olamaz!");
+        }
+        if (yearsOfExperience < 0) {
+            throw new IllegalArgumentException("❌ Deneyim yılı negatif olamaz!");
+        }
+        if (salary < 0) {
+            throw new IllegalArgumentException("❌ Maaş negatif olamaz!");
+        }
+    }
     // Method
     public String fullName() {
-        return id + " " + name + " " + surname + " " + salary + " " + yearsOfExperience;
+        return id + " - " + name + " " + surname + " (" + subject + ")";
     }
 
     public String experienceLevel() {
-        return (yearsOfExperience > 10) ? "Kıdemli Öğretmen" : "Deneyimli Öğretmen";
+        if (yearsOfExperience >= 15) {
+            return "Kıdemli Öğretmen 🏅";
+        } else if (yearsOfExperience >= 5) {
+            return "Deneyimli Öğretmen 🎓";
+        } else {
+            return "Yeni Öğretmen 🆕";
+        }
     }
 
     @Override
@@ -63,6 +85,7 @@ public record TeacherDto(
                 ", yearsOfExperience=" + yearsOfExperience +
                 ", isTenured=" + isTenured +
                 ", salary=" + salary +
+                ", experienceLevel=" + experienceLevel() +
                 '}';
     }
 }

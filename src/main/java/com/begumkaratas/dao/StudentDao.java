@@ -2,7 +2,6 @@ package com.begumkaratas.dao;
 
 import com.begumkaratas.dto.StudentDto;
 import com.begumkaratas.exceptions.StudentNotFoundException;
-import com.begumkaratas.tutorials.iofiles.FileHandler;
 import com.begumkaratas.dto.tutorials.ERole;
 import com.begumkaratas.dto.EStudentType;
 import com.begumkaratas.utils.SpecialColor;
